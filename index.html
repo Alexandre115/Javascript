@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Funções JavaScript</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 id="titulo">Funções Básicas do JavaScript</h1>
+        <p id="mensagem">Clique nos botões para ver as funções.</p>
+        <button class="button" onclick="mostrarAlerta()">Exibir alerta</button>
+        <button class="button" onclick="mudarTexto()">Mudar o Texto</button>
+        <button class="button"onclick="mudarCor()">Mudar as Cores</button>
+        <button class="button"onclick="alterarCores()">Mudar outras Cores</button>
+        
+    </div>
+
+    <script>
+        function mostrarAlerta() {
+            alert("Um virus foi detectado! ");
+        }
+
+        function mudarTexto() {
+            document.getElementById("mensagem").innerText ="O Corinthians ganhou ontem e ninguém tocou no assunto!";
+
+            }
+
+            function mudarCor() {
+                const message = document.getElementById("mensagem");
+                message.style.color = message.style.color === "blue" ? "red" : "blue";
+
+            }
+            function alterarCores() {
+                const message =document.getElementById("titulo");
+                
+            }
+        
+
+
+
+
+    </script>
+
+</body>
+
+</html>
